@@ -6,16 +6,17 @@
 - Make sure `node` and `npm` are installed in your machine
 
 ### Running The App
-- Clone the repo 
+- In a terminal, and in the directory you want to save the project, clone the repo 
+    ```
+    git clone https://github.com/BDubon/PG-County-Data.git
+    ```
 
 - Install all the dependencies with the command
-
     ```
     npm install
     ```
 
 - After all dependencies have been installed, start the server
-
     ```
     npm run dev    
     ```
@@ -24,3 +25,7 @@
     ```
     localhost:5000
     ```
+
+
+### Other Comments
+- `nodemon` automatically track changes once a file is saved, so there's no need to shutdown and restart the server. However, the web page will need to be refreshes to see the new changes.
