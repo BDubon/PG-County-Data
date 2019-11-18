@@ -7,9 +7,20 @@
 
 ### Running The App
 - Clone the repo 
+
 - Install all the dependencies with the command
-    ```npm install```
+
+    ```
+    npm install
+    ```
+
 - After all dependencies have been installed, start the server
-    ```npm run dev```
+
+    ```
+    npm run dev    
+    ```
+
 - You should now be able to see the app in a web browser at the address
-    ```localhost:5000```
+    ```
+    localhost:5000
+    ```
