@@ -1,8 +1,13 @@
-html
-    head
-        title=title
-    body
-        h1=message
-        ul
-            li='item1'
-            li='item2'
+extends layout
+
+block content
+    h1=message
+
+    ol
+        each item, i in data
+            li= item.payee_name
+            ul
+                li= 'Cost: $' + item.amount
+                li= 'Description: ' + item.payment_description
+                li= 'Agency: ' + item.agency
+            br
