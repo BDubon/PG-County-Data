@@ -2,27 +2,6 @@ const express = require('express');
 const app = express();
 
 
-const members = [
-    {
-      id: 1,
-      name: 'John Doe',
-      email: 'john@gmail.com',
-      status: 'active'
-    },
-    {
-      id: 2,
-      name: 'Bob Williams',
-      email: 'bob@gmail.com',
-      status: 'inactive'
-    },
-    {
-      id: 3,
-      name: 'Shannon Jackson',
-      email: 'shannon@gmail.com',
-      status: 'active'
-    }
-  ];
-
 
 // Application settings
 app.use(express.static('public')); // Automatically directs app to `public` folder to access static files
@@ -32,7 +11,32 @@ app.set('view engine', 'pug');    // View rendering engine
 // Add different routes here
 // Home page
 app.get('/', (req, res) => {
-    res.render('index', {title: 'My Title', message:'My Other Random Message'});
+    let articles = [
+        {
+            id: 1,
+            title: 'John Doe',
+            author: 'john@gmail.com',
+            body: 'active'
+        },
+        {
+            id: 2,
+            title: 'Bob Williams',
+            author: 'bob@gmail.com',
+            body: 'inactive'
+        },
+        {
+            id: 3,
+            title: 'Shannon Jackson',
+            author: 'shannon@gmail.com',
+            body: 'active'
+        }
+    ];
+
+    res.render('index', {
+        title: 'My Title', 
+        message:'My Other Random Message',
+        articles: articles
+    });
 })
 
 app.get('/api/members', (req, res) => res.json(members));
