@@ -1,6 +1,4 @@
-# PG-County-Data
-
-## Documentation
+# PG County Data Docs
 
 ### Requirements
 - Make sure these are installed in your machine
