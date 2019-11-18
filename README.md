@@ -3,7 +3,7 @@
 ## Documentation
 
 ### Requirements
-- Make sure `Node` is installed in your machine
+- Make sure `node` and `npm` are installed in your machine
 
 ### Running The App
 - Clone the repo 
