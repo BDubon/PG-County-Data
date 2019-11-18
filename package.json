@@ -1,0 +1,22 @@
+{
+  "name": "pg-county-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BDubon/PG-County-Data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BDubon/PG-County-Data/issues"
+  },
+  "homepage": "https://github.com/BDubon/PG-County-Data#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
