@@ -37,6 +37,6 @@ app.get('/', (req, res) => {
 // *** SERVER SETUP ***
 const PORT = process.nextTick.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
 
