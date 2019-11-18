@@ -1,11 +1,14 @@
+
 const express = require('express');
+const request = require('request');
 const app = express();
-const request = require('request')
+
 
 
 // *** APP SETTINGS ***
-app.use(express.static('public')); // Automatically directs app to `public` folder to access static files
-app.set('view engine', 'pug');    // View rendering engine
+app.use(express.static('public'));   // Automatically directs app to `public` folder to access static files
+app.set('view engine', 'pug');       // View rendering engine
+app.set('views', './public/views')   // Set default views folder
 
 
 // *** ADD THE ROUTES HERE ***
