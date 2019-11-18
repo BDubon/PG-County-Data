@@ -28,4 +28,4 @@
 
 
 ### Other Comments
-- `nodemon` automatically track changes once a file is saved, so there's no need to shutdown and restart the server. However, the web page will need to be refreshes to see the new changes.
+- `nodemon` automatically tracks changes once a file is saved, so there's no need to shutdown and restart the server. However, the web page will need to be refreshed to see the new changes.
