@@ -1,11 +1,17 @@
 var express = require('express');
 var app = express();
 
+app.use(express.static('public'));
+app.set('view engine', 'jade');
+
+// Add different routes here
 app.get('/', function(req, res){
-    res.send('Hello World!');
+    res.render('index', {title: 'My Title', message:'Random Message'});
 })
 
-var server = app.listen(1337, function() {
+
+// Server setup
+var server = app.listen(3000, function() {
     // var host = server.address().address;
     var port = server.address().port;
 
