@@ -1,24 +1,49 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+
+
+const members = [
+    {
+      id: 1,
+      name: 'John Doe',
+      email: 'john@gmail.com',
+      status: 'active'
+    },
+    {
+      id: 2,
+      name: 'Bob Williams',
+      email: 'bob@gmail.com',
+      status: 'inactive'
+    },
+    {
+      id: 3,
+      name: 'Shannon Jackson',
+      email: 'shannon@gmail.com',
+      status: 'active'
+    }
+  ];
 
 
 // Application settings
 app.use(express.static('public')); // Automatically directs app to `public` folder to access static files
-app.set('view engine', 'jade');    // View rendering engine
+app.set('view engine', 'pug');    // View rendering engine
 
 
 // Add different routes here
-app.get('/', function(req, res){
-    res.render('index', {title: 'My Title', message:'Random Message'});
+// Home page
+app.get('/', (req, res) => {
+    res.render('index', {title: 'My Title', message:'My Other Random Message'});
 })
+
+app.get('/api/members', (req, res) => res.json(members));
+
+// Other page
 
 
 // Server setup
-var server = app.listen(3000, function() {
-    // var host = server.address().address;
-    var port = server.address().port;
+const PORT = process.nextTick.PORT || 5000;
 
-    console.log('Your app is running at http://localhost:%s', port) 
-    // Access app at localhost:3000 after running "node index.js" in the terminal
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Access app at localhost:3000 after running "node index.js" in the terminal
 
