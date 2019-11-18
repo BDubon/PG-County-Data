@@ -4,9 +4,9 @@
 
 ### Requirements
 - Make sure these are installed in your machine
-    -- git
-    -- node
-    -- npm
+    - git
+    - node
+    - npm
 
 ### Running The App
 - In a terminal, and in the directory you want to save the project, clone the repo 
