@@ -1,2 +1,2 @@
 # Ignore modules installed
-node_modules/
+node_modules/*
