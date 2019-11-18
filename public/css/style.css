@@ -2,6 +2,10 @@
     background: rgb(65, 63, 63);
 }
 
-h1 {
+h1, li {
     color: azure;
+}
+
+ol.li {
+    color: yellow;
 }
